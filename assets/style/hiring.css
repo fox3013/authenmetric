@@ -108,7 +108,7 @@ button#mail-us h2{
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .content{
     padding: 1% 5%;
     font-size: 0.8em;

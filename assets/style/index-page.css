@@ -525,7 +525,7 @@ section#feature-cases {
           #clients .clients-wrapper .clients-main ul li .logowall-19 {
             background: url("../images/clients/clients-19.png"); }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .main-container {
     padding: 0 30px !important; }
 
