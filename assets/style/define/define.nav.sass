@@ -1,0 +1,153 @@
+nav
+	width: 100%
+	height: 80px
+	position: fixed
+	z-index: 99
+	top: 0
+	left: 0
+	display: block
+	background-color: #1b1b1b
+
+
+	.nav-top-offset-25
+		padding-top: 25px
+
+	.nav-top-offset-35
+		padding-top: 35px
+
+	.nav-top-offset-40
+		padding-top: 40px
+
+	.nav-li-nomargin
+		padding-right: 0 !important
+
+	.logo-wrapper
+		max-width: 1200px
+		margin: 0 auto
+	.logo
+		background: url('../images/new-logo.png') center center no-repeat
+		float: left
+		width: 336px
+		height: 37px
+		background-size: 100%
+		margin-top: 23px
+
+	.lang
+		margin-top: 10px
+		font-size: 1.18em
+		float: left
+		margin-left: 30px
+		color: #bbb
+
+		a
+			display: inline-block
+			padding-top: 5px
+			color: $color-context
+			@include transition(all 0.2s $ease-inout-circ)
+
+			&:hover
+				opacity: .6
+				@include transform(scale(1.06))
+				@include transition(all 0.2s $ease-inout-circ)
+
+			&:active
+				@include transform(scale(0.95))
+				@include transition(all 0.09s $ease-inout-circ)
+
+	ul.navigation
+		height: 80px
+		li
+			cursor: pointer
+			float: right
+			font-size: 1.1em
+			color: #fafafa
+			@include transition(all 0.2s $ease-inout-circ)
+			height: 100%
+
+			a
+				padding: 0 25px
+				height: 100%
+				font-weight: 300
+				display: block
+				padding-top: 5px
+				color: #fafafa
+				@include transition(all 0.2s $ease-inout-circ)
+				vertical-align: middle
+				p
+					display: block
+					+vertical-align()
+
+				&:hover
+					background: #8a0909
+					@include transition(all 0.2s $ease-inout-circ)
+
+
+			a.apply
+				background: $color-alpha
+				color: white
+				padding: 5px 40px
+				@include border-left-radius(40px)
+				@include border-right-radius(40px)
+
+	ul.navigation-hide
+		margin-top: 20px
+		background: #111
+		li
+			cursor: pointer
+			font-size: 1.4em
+			color: #fafafa
+			@include transition(all 0.2s $ease-inout-circ)
+			height: 70px
+			text-align: center
+
+			a
+				padding: 0 25px
+				height: 100%
+				font-weight: 300
+				display: block
+				padding-top: 5px
+				color: #fafafa
+				@include transition(all 0.2s $ease-inout-circ)
+				vertical-align: middle
+				p
+					display: block
+					+vertical-align()
+
+				&:hover
+					background: #8a0909
+					@include transition(all 0.2s $ease-inout-circ)
+
+
+			a.apply
+				background: $color-alpha
+				color: white
+				padding: 5px 40px
+				@include border-left-radius(40px)
+				@include border-right-radius(40px)
+a.focus-url
+	color: #bbb!important
+	position: relative
+
+	&:before
+		color: #ccc
+		content: "•"
+		position: absolute
+		font-size: 1.4em
+		@include horizonal-align(absolute)
+		top: 16px
+
+a.focus-lang
+	color: #bbb!important
+	position: relative
+
+a.menu
+	display: none
+	position: absolute
+	right: 20px
+	top: 10px
+	width: 60px
+	height: 60px
+	background: url('../images/icon-menu.png') center center no-repeat
+	background-size: 20px 20px
+	&:hover
+		opacity: .4

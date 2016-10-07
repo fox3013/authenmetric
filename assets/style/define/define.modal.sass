@@ -1,0 +1,185 @@
+/*
+ * Modal
+ */
+.modal-who-we-are,.modal-founder,.modal-who-we-are-en
+	z-index: 999
+	position: fixed
+	height: 100%
+	width: 100%
+	background: white
+	max-height: 100%
+	background-color: $color-about
+	overflow-y: auto
+	display: none
+	@include transition(all 0.5s $ease-inout-circ)
+
+	hr
+		border: 0
+		border-bottom: 4px $color-alpha solid
+		margin: 0 auto
+		width: 40px
+		margin-top: 12px
+
+	.modal-wrapper
+		max-width: 800px
+		margin: 0 auto
+	
+	.about-nav-bg
+		width: 100%
+		height: 230px
+		background: url(../images/about/img-about-bg.jpg)
+		background-size: cover
+		background-position: center center
+	
+	.about-title
+		text-align: center
+		color: white
+		font-weight: bold
+		padding-top: 30px
+
+		h1,h2,h3
+			line-height: 1.3
+			font-weight: bold
+			font-size: 2.2em
+
+		h2
+			color: $color-alpha
+
+	.founder-nav-bg
+		width: 100%
+		height: 290px
+		background: url(../images/about/img-founder-bg.jpg)
+		background-size: cover
+		background-position: center center
+
+	.founder-title
+		text-align: center
+		color: white
+		font-weight: bold
+		padding-top: 28px
+
+		span
+			width: 90px
+			height: 90px
+			border-radius: 50%
+			background-size: 100% !important
+			margin: auto
+			display: block
+
+		h3
+			line-height: 1.4
+			font-weight: bold
+			font-size: 1.6em
+			color: $color-alpha
+			margin-top: 14px
+
+		p
+			color: #fff
+			font-size: 1.2em
+			line-height: 1.3
+
+		span.avata-alex
+			background: url('../images/avata-alex.png')
+
+		span.avata-richard
+			background: url('../images/avata-richard.png')
+
+	.intro
+		padding: 70px 40px
+		background: #fafafa
+
+		p
+			font-size: 1.2em
+			font-weight: 200
+			text-align: justify
+			color: #7c888d
+			line-height: 1.72
+			letter-spacing: -0.05rem
+			word-wrap: break-word
+			text-align: justify
+			word-break: normal
+
+		a.about-nav-link
+			color: $color-alpha
+			font-weight: 400
+			display: inline-block
+			margin-right: 20px
+			@include transition(all 0.2s $ease-inout-circ)
+
+			&:hover
+				opacity: .6
+				@include transform(scale(1.06))
+				@include transition(all 0.2s $ease-inout-circ)
+
+		.about-nav-links
+			text-align: center
+			font-size: 1.10em
+			margin-top: 30px
+
+
+	.about-nav
+		width: 100%
+		height: 60px
+		background: rgba(0,0,0,.54)
+		padding: 0 20px
+
+		a.logo-s
+			width: 24px
+			height: 24px
+			background: url(../images/about/icon-about-logo.png)
+			background-size: 24px 24px
+			background-position: center center
+			margin-top: 16px
+			float: left
+			display: block
+
+		a.close-button
+			width: 24px
+			height: 24px
+			background: url(../images/about/icon-about-close.png)
+			background-size: 24px 24px
+			background-position: center center
+			margin-top: 16px
+			float: right
+			display: block
+
+.about-content-title
+	color: $color-alpha
+	font-weight: 400
+	font-size: 2.0em
+	text-align: center
+
+	p
+		font-weight: 400
+		color: #657075
+		font-size: 1.2em
+
+	h3
+		line-height: 1.3
+		font-weight: bold
+		font-size: 0.6em
+
+.about-content
+	padding: 30px 20px
+	background: #2e2f36
+	max-width: 300
+
+a.close-bottom
+	width: 100%
+	padding: 15px
+	background: $color-alpha
+	display: block
+	color: white
+	font-weight: bold
+	font-size: 1.3em
+	text-align: center
+	@include transition(all 0.2s $ease-inout-circ)
+
+	&:hover
+		opacity: .6
+		@include transition(all 0.2s $ease-inout-circ)
+	
+.modal-is-invisible
+	display: block
+	@include transform(scale(0))
+	@include transition(all 0.2s $ease-inout-circ)

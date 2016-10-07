@@ -1,0 +1,117 @@
+/*
+ * Plan
+ */
+section#plan
+	min-height: 600px
+	background: $color-background
+	position: relative
+	text-align: center
+	// background: url('../images/img-plan-bg.jpg')
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	background-position: center center
+
+	.plan-wrapper
+		width: 100%
+		height: 100%
+		-webkit-backface-visibility: hidden
+		-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+		-webkit-transform-style: preserve-3d
+		overflow: hidden
+		position: relative
+		padding: 7% 0
+
+		.plan-text
+			background: url('../images/plan-text.png')
+			background-size: 100%
+			width: 616px
+			height: 84px
+			margin: 0 auto
+
+		ul.plan-list
+			width: 100%
+			height: 100%
+			padding: 5% 12% 2%
+			
+			li.plan-lister
+				float: left
+				text-align: center
+
+				div.plan-icon
+					width: 222px
+					height: 222px
+					background-size: cover!important
+					margin: auto
+
+				ul.plan-main
+					padding: 10% 20%
+
+					li
+						font-size: 1.4em
+						padding: 4px 0
+
+				ul.plan-main-en
+
+					li
+						font-size: 1.1em !important
+
+				.icon-signin
+					background: url('../images/icon-plan-s1.png')
+
+				.icon-join
+					background: url('../images/icon-plan-s2.png')
+
+				.icon-show
+					background: url('../images/icon-plan-s3.png')
+
+		a.plan-apply
+			margin: auto
+			display: inline-block
+			border: 2px $color-alpha solid
+			padding: 10px 32px
+			font-size: 1.3em
+			font-weight: bold
+			color: $color-alpha
+			@include border-left-radius(40px)
+			@include border-right-radius(40px)
+			@include transition(all 0.2s $ease-inout-circ)
+
+			&:hover
+				@include transition(all 0.2s $ease-inout-circ)
+				background: $color-alpha
+				color: white
+
+.clearboth
+	clear: both
+
+@media screen and (max-width: 992px)
+	section#plan
+		.plan-wrapper
+			padding: 30% 0 !important
+
+			.plan-text
+				width: 308px
+				height: 42px
+
+			.plan-list
+				li
+					padding: 4% 0
+					float: inherit !important
+
+					div.plan-icon
+						width: 90px
+						height: 75px
+
+					ul.plan-main
+						padding: 2% 20% !important
+
+						li
+							font-size: 1.2em !important
+							padding: 0px 0 !important
+
+			a.plan-apply
+				margin-top: 40px!important
+
+

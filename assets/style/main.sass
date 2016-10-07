@@ -1,0 +1,75 @@
+@import bourbon/bourbon.scss
+@import define/define.color-scheme.sass
+@import 'normalize.css'
+@import 'animate.css'
+@import 'grid/style.grid.css'
+@import superb-easing/superb-easing.sass
+
+/*==============================================
+ *=            Invo Sight Styles - Typo        =
+ *==============================================*/
+// @font-face
+// 	font-family: 'neris-num'
+// 	src: url('../font/neris.otf')
+// 	font-weight: 100
+// 	font-style: normal
+//
+// @font-face
+// 	font-family: 'neris-num'
+// 	src: url('../font/neris-light.otf')
+// 	font-weight: 300
+// 	font-style: normal
+//
+// @font-face
+// 	font-family: 'neris-num'
+// 	src: url('../font/neris-semi.otf')
+// 	font-weight: 500
+// 	font-style: normal
+//
+// @font-face
+// 	font-family: 'neris-num'
+// 	src: url('../font/neris-black.otf')
+// 	font-weight: 800
+// 	font-style: normal
+/*==============================================
+ *=            Invo Sight Styles - Main        =
+ *==============================================*/
+=use2x()
+	background-size: 75% 75%
+
+a,a:hover,a:active,a:visited
+	text-decoration: none
+	outline: none
+
+body
+	padding: 0
+	margin: 0
+	background: #fff
+	color:	$color-context
+	-webkit-font-smoothing: antialiased
+	font-size: 1.3em
+	font-family: "Helvetica Neue" ,"HYQiHei" , "SYHT" , "PingFang", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+
+.set-scroll-y-hidden
+	overflow-y: hidden
+
+.content
+	width: 100%
+	margin-top: 80px
+
+.main-container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 20px
+
+/*==============================================
+ *=  Invo Sight Styles - Blocks & Components   =
+ *==============================================*/
+/** Import Public */
+@import define/define.public.sass
+/** Import Components */
+@import define/define.helper.sass
+/** Import Blocks */
+@import define/define.nav.sass
+@import define/define.cover.sass
+@import define/define.cases.sass

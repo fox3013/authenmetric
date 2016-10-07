@@ -1,0 +1,79 @@
+/*
+ * Footer
+ */
+footer.footer
+	width: 100%
+	background: #fafafa
+	border-top: 1px solid #eeeded
+
+	.footer-wrapper
+		padding: 40px 80px 80px 80px
+		position: relative
+
+		.footer-copyright
+			color: #d5d5d5
+			font-size: 0.9em
+			margin-top: 20px
+			margin-left: 5px
+
+		.footer-logo
+			.logo-img
+				margin-top: 20px
+
+			a
+				@include transition(all 0.2s $ease-inout-circ)
+
+				&:hover
+					opacity: .6
+					@include transform(scale(1.06))
+					@include transition(all 0.2s $ease-inout-circ)
+
+				&:active
+					@include transform(scale(0.95))
+					@include transition(all 0.09s $ease-inout-circ)
+
+		.qr-wrapper
+			.qr-label
+				letter-spacing: 1px
+				font-size: 0.9em
+				margin-top: 10px
+				color: #aaa
+				display: block
+				background: $color-alpha
+				color: white
+				width: 100%
+				padding: 5px 0 5px 0
+				text-align: center
+				@include border-left-radius(34px)
+				@include border-right-radius(34px)
+				position: relative
+
+			.qr-tip
+				width: 120px
+				margin: 0 auto
+
+				.arrow
+					position: absolute
+					width: 0
+					height: 0
+					left: 50%
+					top: -6px
+					margin-left: -6px
+					border-left: 6px solid transparent
+					border-right: 6px solid transparent
+					border-bottom: 6px solid $color-alpha
+		
+		.footer-sns
+			margin-top: 20px
+
+			.weibo
+				display: inline-block
+				background: url(../images/weibo.png) center center no-repeat
+				@include size(30px ,30px)
+
+			.linkedin
+				display: inline-block
+				background: url(../images/linkedin.png) center center no-repeat
+				@include size(30px ,30px)
+				margin-left: 20px
+		
