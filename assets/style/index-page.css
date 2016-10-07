@@ -1,6 +1,11 @@
-
-body{
+body {
+  color: #373737;
+  font-size: 1.3em;
   background: #fff;
+}
+.content {
+  width: 100%;
+  margin-top: 80px;
 }
 section#cover {
   width: 100%;
@@ -524,13 +529,6 @@ section#feature-cases {
   .main-container {
     padding: 0 30px !important; }
 
-  nav .logo-wrapper {
-    padding: 0 30px !important; }
-
-  a.btn-left, a.btn-right {
-    margin-top: 100px;
-    width: 30px !important;
-    height: 30px !important; }
 
   .clients-main {
     padding: 16% 10% !important; }
@@ -561,10 +559,6 @@ section#feature-cases {
     padding-top: 18% !important;
     width: 100% !important; }
 
-  .navigation {
-    display: none !important; }
-
-
   #mentor h1 {
     width: 100% !important;
     height: 40px !important;
@@ -577,9 +571,6 @@ section#feature-cases {
     font-size: 1em;
   }
 
-  a.menu {
-    display: block; }
-
   #features h1, #feature-cases h1, #clients h1 {
     font-size: 2.2em !important; }
 
@@ -587,10 +578,4 @@ section#feature-cases {
     margin-bottom: 30px !important; }
     .award-list li .wrapper-2 {
       min-height: 200px !important; }
-
-  .logo {
-    width: 336px !important;
-    height: 37px !important;
-    background-size: 80% !important;
-    background-position: left center !important;
-    margin-top: 23px !important; } }
+}

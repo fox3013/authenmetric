@@ -35,15 +35,13 @@
  *============================================== */
 
 
-body {
+
+body{
   padding: 0;
   margin: 0;
-  color: #373737;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.3em;
   font-family: "Helvetica Neue", "HYQiHei", "SYHT", "PingFang", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-
 a, a:hover, a:active, a:visited {
   text-decoration: none !important;
   outline: none;
@@ -52,9 +50,7 @@ a, a:hover, a:active, a:visited {
 .set-scroll-y-hidden {
   overflow-y: hidden; }
 
-.content {
-  width: 100%;
-  margin-top: 80px; }
+
 
 .main-container {
   max-width: 1200px;
@@ -393,4 +389,30 @@ footer {
   color: #fafafa;
   background: #3d3d3d;
   padding: 35px 0;
+}
+
+@media screen and (max-width: 900px) {
+  nav .logo-wrapper {
+    padding: 0 30px !important; }
+
+  a.btn-left, a.btn-right {
+    margin-top: 100px;
+    width: 30px !important;
+    height: 30px !important; }
+
+  .navigation {
+    display: none !important;
+  }
+
+  a.menu {
+    display: block;
+  }
+  
+  .logo {
+    width: 336px !important;
+    height: 37px !important;
+    background-size: 80% !important;
+    background-position: left center !important;
+    margin-top: 23px !important;
+  }
 }

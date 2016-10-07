@@ -5,39 +5,103 @@ img#title-img{
   padding-top: 80px;
 }
 .content{
-  padding: 0 10%;
+  padding: 3% 16%;
+  font: 1em;
 }
+html{
+  font-size: 16px;
+}
+
 body#hire{
   background-color: #efefef;
   color: #6e6e6e;
-  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+h3{
+  padding-top: 1.2%;
+  font-size: 1em;
+  font-weight:600;
+}
+
+section{
+  padding: 2% 0;
+}
+
+#about-authen h3{
+  padding-top: 5%;
+}
+
+ul#about-list{
+  list-style-type: none;
+  padding-bottom: 2%;
+}
+ul#about-list li{
+  display: inline;
+  padding-right: 10px;
+}
+ul#about-list li:before{
+  padding-right: 5px;
+  content: "◼"; font-family:"Arial Black";
+  font-size: 0.75em;
+  color:#db0012;
+}
+
+section.positions{
+  border-top: solid thin #cccccc;
+}
+
+li.pos-title-name{
+  display: inline-block;
+}
+li.pos-title-name h2{
+  font-size: 1.1em;
+  color: #0261a2;
+  font-weight: 600;
+}
+li.pos-title-number{
+  padding-left: 15px;
+  font-size: 1.1em;
+  font-weight: 400;
+  display: inline-block;
+}
+span.number{
+  color: #0261a2;
+  font-weight: 300;
+}
+
+ol{
+  font-size: 0.9em;
+  list-style: decimal inside;
+}
+
+.center{
+  text-align: center;
+}
+button#mail-us{
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  border: solid thin #0261a2;
+  width: 90%;
+  max-width: 600px;
+  padding: 2% 8%;
+}
+
+button#mail-us h2{
+  font-size: 1.5em;
+  color: #0261a2;
+  font-weight: 600;
 }
 
 
 @media screen and (max-width: 900px) {
-  .main-container {
-    padding: 0 30px !important; }
-
-  nav .logo-wrapper {
-    padding: 0 30px !important; }
-
-  a.btn-left, a.btn-right {
-    margin-top: 100px;
-    width: 30px !important;
-    height: 30px !important; }
-
-  .navigation {
-    display: none !important;
+  body{
+    font-size: 1em;
   }
-
-  a.menu {
+  ul#about-list li{
     display: block;
   }
 
-  .logo {
-    width: 336px !important;
-    height: 37px !important;
-    background-size: 80% !important;
-    background-position: left center !important;
-    margin-top: 23px !important;
-  }
+}
