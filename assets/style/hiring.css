@@ -110,8 +110,8 @@ button#mail-us h2{
 
 @media screen and (max-width: 950px) {
   .content{
-    padding: 3% 8%;
-    font-size: 0.8em;
+    padding: 1% 5%;
+    font-size: 1em;
   }
   ul#about-list li{
     display: block;
