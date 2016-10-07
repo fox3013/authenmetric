@@ -96,9 +96,10 @@ button#mail-us h2{
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .content{
-    font-size: 1em;
+    padding: 3% 8%;
+    font-size: 0.8em;
   }
   ul#about-list li{
     display: block;
