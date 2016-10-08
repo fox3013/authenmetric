@@ -105,18 +105,33 @@ section#mentor {
   }
 
   @keyframes animHoverMentor {
-    from{background: url(../images/pic-mentor.jpg) center center;}
-    to {background: url(../images/pic-mentor-hover.jpg) center center;}
+    from{background: url(../images/pic-mentor.jpg) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:480px;
+    }
+    to {background: url(../images/pic-mentor-hover.jpg) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:480px;
+    }
   }
   @keyframes animNormalMentor {
-    from {background: url(../images/pic-mentor-hover.jpg) center center;}
-    to {background: url(../images/pic-mentor.jpg) center center;}
+    from {background: url(../images/pic-mentor-hover.jpg) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:480px;}
+    to {background: url(../images/pic-mentor.jpg) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:480px;}
   }
 
   section.mentor-hover{
     animation-name: animHoverMentor;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+
   }
   section.mentor-normal{
     animation-name: animNormalMentor;
@@ -178,13 +193,14 @@ section#mentor {
 
   #mentor-detail{
     display: inline-block;
-    /*background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2));*/
+    background:  url(../images/pic-mentor-desc.png) center center;
+    background-position: 520px 480px;
     opacity: 0;
     left: 48%;
-    width: 38%;
+    width: 520px;
     position: absolute;
     height: 480px;
-    padding: 4% 6% 4% 2%;
+    padding: 50px;
   }
   #mentor-detail h2{
     display: none;
