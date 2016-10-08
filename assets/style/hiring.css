@@ -1,13 +1,12 @@
 .title{
   width: 100%;
-  max-height: 460px;
   margin-top: 80px;
   background: url(../images/hiring.jpg) top center;
   background-size: 1920px 613.33333px;
   background-repeat: no-repeat;
 }
 .title h1{
-  color: black;
+  color: #444444;
   font-size: 3em;
   text-align: right;
   line-height: 1.5;
@@ -16,12 +15,12 @@
   margin: 0;
 }
 .title h2{
-  color: black;
+  color: #444444;
   font-size: 1.8em;
   line-height: 1.4;
   text-align: right;
   padding-right: 22%;
-  padding-bottom: 95px;
+  padding-bottom: 140px;
 }
 .content{
   padding: 3% 16%;
