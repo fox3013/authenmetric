@@ -104,6 +104,7 @@ section#mentor {
     height: 480px;
   }
 
+
   @keyframes animHoverMentor {
     from{background: url(../images/pic-mentor.jpg) center center;
       background-size: cover;
@@ -209,7 +210,34 @@ section#mentor {
   #mentor-detail span#mentor-eng-h2{
     font-size: 0.75em;
   }
-  #mentor-detail
+  #btn-show-mentor{
+    margin-top: 20px;
+    width: 120px;
+    font-size: 1.53846em;
+    text-align: center;
+    padding: 5px 0;
+    border: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+  }
+  #btn-show-mentor:hover{
+    animation-name: animExpWidth;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  #btn-show-mentor span{
+    font-size: 0.8em;
+    position: relative;
+    top: -3px;
+  }
+  @keyframes animExpWidth {
+    from{width:120px; background-color: rgba(255, 255, 255, 0)}
+    to {width: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
 
 
 section#contact {
