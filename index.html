@@ -9,6 +9,9 @@
 		<link href="./assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 		<link rel="stylesheet" type="text/css" href="./assets/library/slick/slick.css">
 		<link rel="stylesheet" type="text/css" href="./assets/library/slick/slick-theme.css">
+		<script src="./assets/library/bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="./assets/library/index.js" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	</head>
 	<body>
@@ -87,16 +90,29 @@
 			</section>
 			<section id="mentor">
 				<div class="row main-container">
-					<div class="row cover-text">
-						<h1  class="wow fadeInUp" data-wow-delay="0.2s">首席科学家 李子青</h1>
-						<p class="wow fadeInUp" data-wow-delay="0.4s">
-							李子青教授有深厚计算机视觉、机器学习研究和应用基础积累。凭借丰富的想象力，和解决实际应用问题的务实精神，他在人脸识别应用研究领域开创了两个新的技术研究方向：一是近红外人脸识别，另一个是异质人脸识别。<br /><br>
-							2001年，李子青教授在微软研究院研发了世界上第一个实时人脸识别系统Eye-CU，比尔·盖茨接受CNN头条采访亲自为之讲解。2004年作为“中科院优秀百人计划”的入选者， 进入中科院担任中科院生物识别与安全研究中心主任。由于在人脸识别、模式识别、计算机视觉领域的贡献，当选 IEEE Fellow。<br /><br>
-							过去10年，李子青教授研发了面向实用的人脸识别系统和智能视频监控系统，在国家重大安全部门实施并发挥作用，如北京奥运、上海世博、边检通关、海关等。世界科学界顶级刊物《Science》对李教授进行聚焦专访，介绍其科技成果，以此说明中国技术创新能力提升，跻身国际水平。李教授代表中国国家体撰写了中国制定的唯一一个人脸识别国际标准，他还制定国家、行业标准制累计18项。
+					<div class="row cover-text" id="mentor-name">
+						<h1  class="wow fadeInUp" data-wow-delay="0.2s">李子青 <span id="mentor-eng">Stan Li</span></h1>
+						<h2 class="wow fadeInUp" data-wow-delay="0.4s">
+							创始人 | 董事长 | 首席科学家
+						</h2>
+						<div class="rounded-button" id="btn-show-mentor">
+							了解更多
+						</div>
+					</div>
+
+					<div class="row" id="mentor-detail">
+						<h2>李子青 <span id="mentor-eng-h2">Stan Li</span></h2>
+						<p>
+							IEEE Fellow，国际知名计算机视觉、模式识别、机器学习、生物特征识别领域专家。英国Surrey大学博士，中科院资深研究员，中科院优秀百人计划，生物识别与安全技术研究中心主任。<br><br />
+							在微软研究院研发了世界上第一个实时人脸识别系统Eye-CU（2002年），比尔·盖茨接受CNN头条采访亲自为之讲解。2004年进入中科院，设计了世界上第一个大规模运营的生物识别通关系统（罗湖-香港），研发并实施了第一个奥运会实名制人票合一人脸识别系统，以及罗湖海关水客识别系统等。代表中国国家体撰写了中国制定的唯一一个人脸识别国际标准，制定国家、行业标准制累计18项。<br><br />
+							世界科学界顶级刊物《Science》对李教授进行聚焦专访，介绍其团队科技成果，并以此说明中国技术创新能力提升，跻身国际水平。
 						</p>
 					</div>
 				</div>
-
+				<!-- <div id="mentor-backgrounds">
+					<div id="mentor-bg1"></div>
+					<div id="mentor-bg2"></div>
+				</div> -->
 			</section>
 			<section id="feature-cases">
 				<div id="feature-cases-carousel" class="feature-cases-wrapper">
@@ -361,7 +377,6 @@
 			中科奥森数据科技有限公司 © 2004 - 2016  京ICP备14057104号
 		</footer>
 
-		<script src="./assets/library/bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="./assets/library/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 		<script src="./assets/library/misc.js" type="text/javascript" charset="utf-8"></script>
 		<script src="./assets/library/wow.js" type="text/javascript" charset="utf-8"></script>
