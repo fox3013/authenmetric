@@ -1,8 +1,27 @@
-img#title-img{
-  width: 100%;
-}
 .title{
-  padding-top: 80px;
+  width: 100%;
+  max-height: 460px;
+  margin-top: 80px;
+  background: url(../images/hiring.jpg) top center;
+  background-size: 1920px 613.33333px;
+  background-repeat: no-repeat;
+}
+.title h1{
+  color: black;
+  font-size: 3em;
+  text-align: right;
+  line-height: 1.5;
+  padding-top: 260px;
+  padding-right: 22%;
+  margin: 0;
+}
+.title h2{
+  color: black;
+  font-size: 1.8em;
+  line-height: 1.4;
+  text-align: right;
+  padding-right: 22%;
+  padding-bottom: 95px;
 }
 .content{
   padding: 3% 16%;
@@ -32,7 +51,9 @@ h3{
 section{
   padding: 2% 0;
 }
-
+section.feature-cases{
+  padding: 0;
+}
 #about-authen h3{
   padding-top: 3%;
 }
@@ -107,14 +128,90 @@ button#mail-us h2{
   font-weight: 600;
 }
 
+.large-screen{
+  display: block;
+}
+.small-screen{
+  display: none;
+}
 
 @media screen and (max-width: 950px) {
   .content{
     padding: 1% 5%;
     font-size: 0.8em;
   }
+  .title{
+    width: 100%;
+    max-height: 460px;
+    margin-top: 80px;
+    background: url(../images/hiring.jpg) top center;
+    background-size: 950px 303px;
+    background-repeat: no-repeat;
+  }
+  .title h1{
+    font-size: 2em;
+    text-align: right;
+    line-height: 1.4;
+    padding-top: 160px;
+    padding-right: 15%;
+    margin: 0;
+  }
+  .title h2{
+    font-size: 1.3em;
+    line-height: 1.6;
+    text-align: right;
+    padding-right: 15%;
+    padding-bottom: 80px;
+  }
+  .large-screen{
+    display: block;
+  }
+  .small-screen{
+    display: none;
+  }
+
+
   ul#about-list li{
     display: block;
   }
+}
 
+
+@media screen and (max-width: 500px) {
+  .content{
+    padding: 1% 5%;
+    font-size: 0.8em;
+  }
+  .title{
+    width: 100%;
+    max-height: 460px;
+    margin-top: 80px;
+    background: url(../images/hiring.jpg) top center;
+    background-size: 500px 159.473684px;
+    background-repeat: no-repeat;
+  }
+  .title h1{
+    font-size: 1.5em;
+    text-align: right;
+    line-height: 1.6;
+    padding-top: 60px;
+    padding-right: 8%;
+    margin: 0;
+  }
+  .title h2{
+    font-size: 0.8em;
+    line-height: 1.2;
+    text-align: right;
+    padding-right: 8%;
+    padding-bottom: 25px;
+  }
+  .large-screen{
+    display: none;
+  }
+  .small-screen{
+    display: block;
+  }
+  ul#about-list li{
+    display: block;
+  }
 }
