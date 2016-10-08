@@ -1,8 +1,8 @@
 .title{
   width: 100%;
   margin-top: 80px;
-  background: url(../images/hiring.jpg) top center;
-  background-size: 1920px 613.33333px;
+  background: url(../images/hiring.jpg) center center;
+  background-size: cover;/* 1920px 613.33333px;*/
   background-repeat: no-repeat;
 }
 .title h1{
@@ -50,7 +50,7 @@ h3{
 section{
   padding: 2% 0;
 }
-section.feature-cases{
+section#feature-cases{
   padding: 0;
 }
 #about-authen h3{
@@ -144,7 +144,7 @@ button#mail-us h2{
     max-height: 460px;
     margin-top: 80px;
     background: url(../images/hiring.jpg) top center;
-    background-size: 950px 303px;
+    background-size: cover;/*950px 303px;*/
     background-repeat: no-repeat;
   }
   .title h1{
@@ -186,7 +186,7 @@ button#mail-us h2{
     max-height: 460px;
     margin-top: 80px;
     background: url(../images/hiring.jpg) top center;
-    background-size: 500px 159.473684px;
+    background-size: cover;/*500px 159.473684px;*/
     background-repeat: no-repeat;
   }
   .title h1{
