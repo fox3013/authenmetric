@@ -218,6 +218,9 @@ section#mentor {
     border-style: solid;
     border-width: 1px;
   }
+  .rounded-button:hover{
+    cursor: pointer;
+  }
 
   #btn-show-mentor{
     margin-top: 20px;
