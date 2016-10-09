@@ -219,11 +219,24 @@ section#mentor {
     border-width: 1px;
   }
 
+  #btn-show-mentor{
+    margin-top: 20px;
+    width: 120px;
+    font-size: 1.53846em;
+    text-align: center;
+    padding: 5px 0;
+    border: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+
   #btn-hide-mentor{
     display: none;
   }
   #btn-show-mentor:hover{
-    animation-name: animExpWidth;
+    animation-name: animWidth !important;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
   }
@@ -232,7 +245,7 @@ section#mentor {
     position: relative;
     top: -3px;
   }
-  @keyframes animExpWidth {
+  @keyframes animWidth {
     from{width:120px; background-color: rgba(255, 255, 255, 0)}
     to {width: 150px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -676,8 +689,8 @@ section#feature-cases {
   #contact li {
     padding-top: 30px !important; }
 
-  section#mentor .cover-text {
-    padding-top: 25% !important;
+  section#mentor .cover-text#mentor-name {
+    padding-top: 25%;
     width: 100% !important; }
 
   section#mentor h1 {
@@ -704,7 +717,7 @@ section#feature-cases {
     text-align: center;
   }
   #btn-hide-mentor{
-    margin-top: 10%;
+    margin-top: 30%;
     width: auto;
     padding-left: 20%;
     padding-right: 20%;
@@ -735,7 +748,7 @@ section#feature-cases {
     opacity: 0;
     background-image: none;
     background-color: rgba(0, 0, 0, 0.85);
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   #features h1, #feature-cases h1, #clients h1 {
@@ -749,9 +762,24 @@ section#feature-cases {
 
 @media screen and (max-width: 500px){
   /*phone*/
+  section#mentor{
+    background-position: 60%;
+  }
+  section#mentor .cover-text#mentor-name {
+    padding-top: 240px;
+    padding-left: 5%;
+  }
   #mentor-detail{
     font-size: 0.9em;
     padding:8% 8% 0;
+  }
+  #btn-hide-mentor{
+    margin-top: 10%;
+    width: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: inline-block;
+    text-align: center;
   }
 }
 

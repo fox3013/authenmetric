@@ -28,6 +28,7 @@ registerEvents = function(){
         $("#mentor-detail").addClass("mentor-hover");
         $("#mentor-detail").removeClass("mentor-normal");
         $("#btn-show-mentor").html("了解更多 <span>></span>");
+        $("#btn-show-mentor").attr("style", "visibility: visible; animation-delay: 0s; animation-name: fadeInUp;");
       })
       .mouseleave(function() {
         $("section#mentor").removeClass("mentor-hover");
