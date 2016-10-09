@@ -6,6 +6,11 @@ $( document ).ready(function() {
     $("section#mentor").addClass("mentor-normal");
   }, 100);
 
+  $('#mentor-detail').on('click scroll touchmove mousewheel', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  });
+
   registerEvents();
 
 });
