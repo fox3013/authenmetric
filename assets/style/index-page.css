@@ -99,10 +99,7 @@ section#mentor {
   line-height: 1.5;
   position: relative;
   overflow: hidden; }
-  #mentor-hover-bg{
-    width: 100%;
-    height: 480px;
-  }
+
 
 
   @keyframes animHoverMentor {
@@ -203,14 +200,14 @@ section#mentor {
     height: 480px;
     padding: 50px;
   }
-  #mentor-detail h2{
+  /*#mentor-detail h2{
     display: none;
     font-size: 1.84615em;
-  }
+  }*/
   #mentor-detail span#mentor-eng-h2{
     font-size: 0.75em;
   }
-  #btn-show-mentor{
+  .rounded-button{
     margin-top: 20px;
     width: 120px;
     font-size: 1.53846em;
@@ -220,6 +217,10 @@ section#mentor {
     border-radius: 40px;
     border-style: solid;
     border-width: 1px;
+  }
+
+  #btn-hide-mentor{
+    display: none;
   }
   #btn-show-mentor:hover{
     animation-name: animExpWidth;
@@ -646,9 +647,9 @@ section#feature-cases {
             background: url("../images/clients/clients-19.png"); }
 
 @media screen and (max-width: 950px) {
+  /*pads*/
   .main-container {
     padding: 0 30px !important; }
-
 
   .clients-main {
     padding: 16% 10% !important; }
@@ -676,19 +677,65 @@ section#feature-cases {
     padding-top: 30px !important; }
 
   section#mentor .cover-text {
-    padding-top: 18% !important;
+    padding-top: 25% !important;
     width: 100% !important; }
 
-  #mentor h1 {
-    width: 100% !important;
-    height: 40px !important;
-    font-size: 1.9em;
-    background-size: 225px 29px !important; }
-  section#mentor p {
-    margin-top: 0;
-    padding-top: 8%;
-    line-height: 1.4;
-    font-size: 1em;
+  section#mentor h1 {
+    font-size: 3em;
+  }
+  section#mentor h2{
+    font-size: 1.5em;
+  }
+  .rounded-button{
+    margin-top: 20px;
+    width: 100px;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 0;
+    border: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+  }
+  #btn-hide-mentor{
+    display: block;
+  }
+  .button-container{
+    text-align: center;
+  }
+  #btn-hide-mentor{
+    margin-top: 10%;
+    width: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: inline-block;
+    text-align: center;
+  }
+  .mentor-hover#mentor-detail{
+    display: block;
+  }
+  .mentor-normal#mentor-detail{
+    display: none;
+  }
+  #mentor-detail h2{
+    display: block;
+    padding: 20px 0;
+  }
+  #mentor-detail p{
+    margin: 0 !important;
+  }
+  #mentor-detail{
+    display: none;
+    position: fixed;
+    top: 80px;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-size: 1.2em;
   }
 
   #features h1, #feature-cases h1, #clients h1 {
@@ -698,4 +745,20 @@ section#feature-cases {
     margin-bottom: 30px !important; }
     .award-list li .wrapper-2 {
       min-height: 200px !important; }
+}
+
+@media screen and (max-width: 500px){
+  /*phone*/
+  #mentor-detail{
+    font-size: 0.9em;
+    padding:8% 8% 0;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 520px){
+  /*iphone 4*/
+  #mentor-detail{
+    font-size: 0.75em;
+    padding: 8% 8% 0;
+  }
 }
