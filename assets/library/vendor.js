@@ -1643,13 +1643,27 @@ $('a.menu').click(function(){
 	}
 });
 
-$(".cover-roll").slick({
-	dots: true,
-	infinite: true,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 4000,
-	lazyLoad: 'ondemand'
-});
+if (window.innerWidth >= 600) {
+  $(".cover-roll").slick({
+  	dots: true,
+  	infinite: true,
+  	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: true,
+  	autoplaySpeed: 4000,
+  	lazyLoad: 'ondemand',
+    prevArrow:"<img class='a-left control-c prev slick-prev' style='z-index:20;position:absolute;left:20px; width: 60px;height: 60px;' src='./assets/images/icon_left.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' style='z-index:20;position:absolute;right:20px; width: 60px;height: 60px;' src='./assets/images/icon_right.png'>"
+  });
+}else {
+  $(".cover-roll").slick({
+  	dots: true,
+  	infinite: true,
+  	slidesToShow: 1,
+  	slidesToScroll: 1,
+    arrows: false,
+  	autoplay: true,
+  	autoplaySpeed: 4000,
+  	lazyLoad: 'ondemand',
+  });
+}

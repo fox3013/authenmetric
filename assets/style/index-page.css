@@ -17,6 +17,12 @@ section#cover {
   .cover-roll{
     height: 100%;
   }
+  .a-left:hover{
+    opacity: 0.6;
+  }
+  .a-right:hover{
+    opacity: 0.6;
+  }
   .slick-list{
     height: 100%;
   }
@@ -188,6 +194,7 @@ section#mentor {
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
   }
+
 
   #mentor-detail{
     display: inline-block;
@@ -663,6 +670,10 @@ section#feature-cases {
             background: url("../images/clients/clients-19.png"); }
 
 @media screen and (max-width: 950px) {
+  .a-left{
+    display: none;
+  }
+
   /*pads*/
   .main-container {
     padding: 0 30px !important; }
