@@ -670,9 +670,7 @@ section#feature-cases {
             background: url("../images/clients/clients-19.png"); }
 
 @media screen and (max-width: 950px) {
-  .a-left{
-    display: none;
-  }
+  
 
   /*pads*/
   .main-container {
