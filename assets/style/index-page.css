@@ -779,6 +779,11 @@ section#feature-cases {
     border-style: solid;
     border-width: 1px;
   }
+
+  /*btn-show-mentor hover animation should not show*/
+  @keyframes animWidth {
+
+  }
   #btn-hide-mentor{
     display: block;
   }

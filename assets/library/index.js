@@ -35,6 +35,7 @@ $( document ).ready(function() {
 
 registerEvents = function(){
   var win = $(this)
+  $("#btn-show-mentor").unbind();
   $("#btn-show-mentor").on("click touch", function(){
     $("#mentor-detail").removeClass("mentor-normal");
     $("#mentor-detail").addClass("mentor-hover");
@@ -42,7 +43,6 @@ registerEvents = function(){
   $("#btn-hide-mentor").on("click touch", function(){
     $("#mentor-detail").removeClass("mentor-hover");
     $("#mentor-detail").addClass("mentor-normal");
-    console.log('click');
   });
   if (win.width() >= 950) {
     $("#btn-show-mentor").mouseenter(function() {
