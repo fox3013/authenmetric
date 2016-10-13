@@ -1652,8 +1652,8 @@ if (window.innerWidth >= 600) {
   	autoplay: true,
   	autoplaySpeed: 4000,
   	lazyLoad: 'ondemand',
-    prevArrow:"<img class='a-left control-c prev slick-prev' style='z-index:20;position:absolute;left:20px; width: 60px;height: 60px;' src='./assets/images/icon_left.png'>",
-    nextArrow:"<img class='a-right control-c next slick-next' style='z-index:20;position:absolute;right:20px; width: 60px;height: 60px;' src='./assets/images/icon_right.png'>"
+    prevArrow:"<img class='a-left control-c prev slick-prev' style='z-index:20;position:absolute;left:20px; width: 60px;height: 60px;' src='./assets/images/icon_left.png' onmouseover='hover(this);' onmouseout='unhover(this);'>",
+    nextArrow:"<img class='a-right control-c next slick-next' style='z-index:20;position:absolute;right:20px; width: 60px;height: 60px;' src='./assets/images/icon_right.png' onmouseover='hover(this);' onmouseout='unhover(this);'>"
   });
 }else {
   $(".cover-roll").slick({

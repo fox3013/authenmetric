@@ -6,6 +6,23 @@ $( document ).ready(function() {
     $("section#mentor").addClass("mentor-normal");
   }, 100);
 
+
+
+  hover = function (element) {
+    if ($(element).hasClass("a-left")) {
+      element.setAttribute('src', './assets/images/icon_left_hover.png');
+    }else if ($(element).hasClass("a-right")) {
+      element.setAttribute('src', './assets/images/icon_right_hover.png');
+    }
+  };
+  unhover = function (element) {
+    if ($(element).hasClass("a-left")) {
+      element.setAttribute('src', './assets/images/icon_left.png');
+    }else if ($(element).hasClass("a-right")) {
+      element.setAttribute('src', './assets/images/icon_right.png');
+    }
+  };
+
   $('#mentor-detail').on('click scroll touchmove mousewheel', function(e) {
     if ($(this).css('opacity')>0) {
       e.preventDefault();

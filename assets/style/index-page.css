@@ -18,10 +18,10 @@ section#cover {
     height: 100%;
   }
   .a-left:hover{
-    opacity: 0.6;
+    opacity: 0.4;
   }
   .a-right:hover{
-    opacity: 0.6;
+    opacity: 0.4;
   }
   .slick-list{
     height: 100%;
@@ -41,22 +41,22 @@ section#cover {
     outline: none; }
   section#cover .cover-2 {
     background-image: url(../images/pic-cover-2.jpg);
-    background-position: center right;
+    /*background-position: center right;*/
     text-align: left;
   }
   section#cover .cover-3 {
     background-image: url(../images/pic-cover-3.jpg);
-    background-position: center left;
+    /*background-position: center left;*/
     text-align: left;
   }
     section#cover .cover-4 {
       background-image: url(../images/pic-cover-4.jpg);
-      background-position: center right;
+      /*background-position: center right;*/
       text-align: left;
     }
     section#cover .cover-5 {
       background-image: url(../images/pic-cover-5.jpg);
-      background-position: center right;
+      /*background-position: center right;*/
       text-align: left;
     }
   section#cover h1 {
@@ -79,8 +79,6 @@ section#cover {
     top: 27%;
   }
   section#cover .cover-5 .cover-text-left{
-    position: absolute;
-    left: 10%;
     top: 25%;
   }
   section#cover .cover-text-center{
@@ -810,6 +808,50 @@ section#feature-cases {
     margin-bottom: 30px !important; }
     .award-list li .wrapper-2 {
       min-height: 200px !important; }
+
+      section#cover .cover-text {
+        background-image: url(../images/pic_cover_small_1.jpg);
+        background-position: center center;
+        text-align: center;
+      }
+      section#cover .cover-2 {
+        background-image: url(../images/pic_cover_small_2.jpg);
+      }
+      section#cover .cover-3 {
+        background-image: url(../images/pic_cover_small_3.jpg);
+      }
+        section#cover .cover-4 {
+          background-image: url(../images/pic_cover_small_4.jpg);
+
+        }
+        section#cover .cover-5 {
+          background-image: url(../images/pic_cover_small_5.jpg);
+        }
+      section#cover h1 {
+        font-size: 3em;
+      }
+      section#cover h2 {
+        font-size: 2em;
+      }
+      section#cover h3 {
+
+        padding: 0 20px 0 20px;
+      }
+      section#cover .cover-5 .cover-text-left{
+        position: relative;
+        left: auto;
+        top: auto;
+      }
+      section#cover .cover-text-wrapper{
+        padding-top: 40px;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+      }
+      section#cover .cover-2 .cover-text-wrapper{
+        padding-top: 25px;
+      }
 }
 
 @media screen and (max-width: 500px){
