@@ -98,7 +98,8 @@ a.btn-left {
   background-size: 100%;
   left: 20px;
   z-index: 20;
-  cursor: pointer; }
+  cursor: pointer; 
+}
 
 a.btn-left:hover {
   background: url("../images/icon_left_hover.png");

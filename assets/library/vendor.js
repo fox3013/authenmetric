@@ -1646,6 +1646,9 @@ $('a.menu').click(function(){
 if (window.innerWidth >= 600) {
   $(".cover-roll").slick({
   	dots: true,
+    customPaging : function(slider, i) {
+        return '<a><div class="slick-dots-button"><div/></a>';
+    },
   	infinite: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
@@ -1658,6 +1661,9 @@ if (window.innerWidth >= 600) {
 }else {
   $(".cover-roll").slick({
   	dots: true,
+    customPaging : function(slider, i) {
+        return '<a><div class="slick-dots-button"><div/></a>';
+    },
   	infinite: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,

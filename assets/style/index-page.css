@@ -37,26 +37,21 @@ section#cover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    /*height: 550px;*/
     outline: none; }
   section#cover .cover-2 {
     background-image: url(../images/pic-cover-2.jpg);
-    /*background-position: center right;*/
     text-align: left;
   }
   section#cover .cover-3 {
     background-image: url(../images/pic-cover-3.jpg);
-    /*background-position: center left;*/
     text-align: left;
   }
     section#cover .cover-4 {
       background-image: url(../images/pic-cover-4.jpg);
-      /*background-position: center right;*/
       text-align: left;
     }
     section#cover .cover-5 {
       background-image: url(../images/pic-cover-5.jpg);
-      /*background-position: center right;*/
       text-align: left;
     }
   section#cover h1 {
@@ -85,9 +80,33 @@ section#cover {
 
   }
 
-  section#cover h3 {
-    color: #a9a9a9;
-    padding: 70px 20px 0 20px; }
+section#cover h3 {
+  color: #a9a9a9;
+  padding: 70px 20px 0 20px;
+}
+
+.slick-dots {
+    position: relative !important;
+    bottom: 30px !important;
+
+}
+.slick-dots li{
+  width:50px !important;
+  margin: 0 5px !important;
+}
+.slick-dots-button{
+  width:50px;
+  height:2px;
+  background-color: #808080;
+  opacity: 0.4;
+}
+
+.slick-dots li.slick-active .slick-dots-button
+{
+    opacity: 1;
+}
+
+
 
 section#features {
   width: 100%;
