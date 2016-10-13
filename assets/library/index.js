@@ -7,8 +7,10 @@ $( document ).ready(function() {
   }, 100);
 
   $('#mentor-detail').on('click scroll touchmove mousewheel', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
+    if ($(this).css('opacity')>0) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
   });
 
   registerEvents();
