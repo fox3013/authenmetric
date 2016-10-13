@@ -66,7 +66,7 @@ section#cover {
   section#cover .cover-text-right{
     position: absolute;
     right: 10%;
-    top: 27%;
+    top: 44%;
   }
   section#cover .cover-text-left{
     position: absolute;
@@ -97,7 +97,7 @@ section#cover h3 {
 .slick-dots-button{
   width:50px;
   height:2px;
-  background-color: #808080;
+  background-color: #aaaaaa;
   opacity: 0.4;
 }
 
