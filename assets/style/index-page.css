@@ -41,13 +41,52 @@ section#cover {
     outline: none; }
   section#cover .cover-2 {
     background-image: url(../images/pic-cover-2.jpg);
-    background-position: center right; }
+    background-position: center right;
+    text-align: left;
+  }
   section#cover .cover-3 {
     background-image: url(../images/pic-cover-3.jpg);
-    background-position: center left; }
+    background-position: center left;
+    text-align: left;
+  }
+    section#cover .cover-4 {
+      background-image: url(../images/pic-cover-4.jpg);
+      background-position: center right;
+      text-align: left;
+    }
+    section#cover .cover-5 {
+      background-image: url(../images/pic-cover-5.jpg);
+      background-position: center right;
+      text-align: left;
+    }
   section#cover h1 {
+    font-size: 2.5em;
     margin: 0;
     padding: 0 20px; }
+  section#cover h2 {
+      font-size: 2em;
+      margin: 0;
+      padding: 20px 20px;
+    }
+  section#cover .cover-text-right{
+    position: absolute;
+    right: 10%;
+    top: 27%;
+  }
+  section#cover .cover-text-left{
+    position: absolute;
+    left: 10%;
+    top: 27%;
+  }
+  section#cover .cover-5 .cover-text-left{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+  }
+  section#cover .cover-text-center{
+
+  }
+
   section#cover h3 {
     color: #a9a9a9;
     padding: 70px 20px 0 20px; }
@@ -70,8 +109,9 @@ section#features {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      width: 35px;
-      height: 35px;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 20px;
       display: inline-block; }
     section#features ul li.list-1 em {
       background-image: url(../images/icon-feature-1.png); }
@@ -93,7 +133,7 @@ section#features {
       color: #666;
       font-weight: 300;
       display: block;
-      padding: 0px 60px; }
+      padding: 0px 20px; }
 
 section#mentor {
   width: 100%;
@@ -670,7 +710,7 @@ section#feature-cases {
             background: url("../images/clients/clients-19.png"); }
 
 @media screen and (max-width: 950px) {
-  
+
 
   /*pads*/
   .main-container {
@@ -774,6 +814,10 @@ section#feature-cases {
 
 @media screen and (max-width: 500px){
   /*phone*/
+  .content {
+    width: 100%;
+    margin-top: 60px;
+  }
   section#mentor{
     background-position: 60%;
   }
@@ -793,12 +837,80 @@ section#feature-cases {
     display: inline-block;
     text-align: center;
   }
+
+  section#cover{
+    height: 440px;
+  }
+
+  section#cover .cover-text {
+    background-image: url(../images/pic_cover_small_1.jpg);
+    background-position: center center;
+    text-align: center;
+  }
+  section#cover .cover-2 {
+    background-image: url(../images/pic_cover_small_2.jpg);
+  }
+  section#cover .cover-3 {
+    background-image: url(../images/pic_cover_small_3.jpg);
+  }
+    section#cover .cover-4 {
+      background-image: url(../images/pic_cover_small_4.jpg);
+
+    }
+    section#cover .cover-5 {
+      background-image: url(../images/pic_cover_small_5.jpg);
+    }
+  section#cover h1 {
+    font-size: 2em;
+  }
+  section#cover h2 {
+    font-size: 1.3em;
+  }
+  section#cover h3 {
+    padding: 0 20px 0 20px;
+  }
+  section#cover .cover-5 .cover-text-left{
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  section#cover .cover-text-wrapper{
+    padding-top: 40px;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+
+
+
 }
 
-@media screen and (max-width: 500px) and (max-height: 520px){
-  /*iphone 4*/
+@media screen and (max-width: 500px) and (max-height: 600px){
+  /*iphone 4 5*/
+
+  section#cover{
+    height: 280px;
+  }
+  section#cover .cover-text-wrapper{
+    padding-top: 5px;
+  }
+  section#cover h1 {
+    font-size: 1.6em;
+  }
+  section#cover h2 {
+    padding-top: 10px;
+    font-size: 1.2em;
+  }
+  section#cover h3 {
+    font-size: 1.1em;
+    padding: 0 20px 0 20px;
+  }
+
   #mentor-detail{
     font-size: 0.75em;
     padding: 8% 8% 0;
   }
+
+
 }

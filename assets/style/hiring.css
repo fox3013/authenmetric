@@ -127,12 +127,7 @@ button#mail-us h2{
   font-weight: 600;
 }
 
-.large-screen{
-  display: block;
-}
-.small-screen{
-  display: none;
-}
+
 
 @media screen and (max-width: 950px) {
   .content{
@@ -162,12 +157,6 @@ button#mail-us h2{
     padding-right: 15%;
     padding-bottom: 80px;
   }
-  .large-screen{
-    display: block;
-  }
-  .small-screen{
-    display: none;
-  }
 
 
   ul#about-list li{
@@ -184,7 +173,7 @@ button#mail-us h2{
   .title{
     width: 100%;
     max-height: 460px;
-    margin-top: 80px;
+    margin-top: 60px;
     background: url(../images/hiring.jpg) top center;
     background-size: cover;/*500px 159.473684px;*/
     background-repeat: no-repeat;
