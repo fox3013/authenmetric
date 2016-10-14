@@ -1615,12 +1615,15 @@ var setCarousel = function(){
 	carousel_feature.showPane(0);
 }
 var flag = false;
-var anchor = function(link){
+var anchor = function(event, link){
 	var target = link;
 	if( target.length ) {
-		event.preventDefault();
+    event = event || window.event;
+    if (event != undefined) {
+      event.preventDefault();
+    }
 		$('html, body').animate({
-			scrollTop: $("section#" + target).offset().top
+			scrollTop: $("section#" + target).offset().top - 60
 		},{duration:600,complete:function(){
 
 		}});
