@@ -110,6 +110,7 @@ section#cover h3 {
 
 
 section#features {
+  background-color: #f0f0f0;
   width: 100%;
   padding-bottom: 20px; }
   section#features .cover-text {
@@ -727,7 +728,7 @@ section#feature-cases {
           #clients .clients-wrapper .clients-main ul li .logowall-19 {
             background: url("../images/clients/clients-19.png"); }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1064px) {
 
 
   /*pads*/

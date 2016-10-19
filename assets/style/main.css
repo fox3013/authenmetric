@@ -98,7 +98,7 @@ a.btn-left {
   background-size: 100%;
   left: 20px;
   z-index: 20;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 a.btn-left:hover {
@@ -401,7 +401,7 @@ footer {
 
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1064px) {
   nav .logo-wrapper {
     padding: 0 30px !important;
   }
