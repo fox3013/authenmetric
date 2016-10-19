@@ -154,17 +154,30 @@ section#features {
       display: block;
       padding: 0px 20px; }
 
-section#mentor {
+section#mentor{
+  background-color: rgb(62, 64, 68);
+  height:480px;
+}
+section#mentor .cover-team{
+  height: 480px;
+}
+section#mentor #team-0{
   width: 100%;
   background: url(../images/pic-mentor.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height:480px;
   color: #fafafa;
   line-height: 1.5;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+section#mentor .main-container{
+  max-width: none;
+}
+section#mentor .slick-dotted.slick-slider{
+  margin: 0
+}
 
 
   @keyframes animHoverMentor {

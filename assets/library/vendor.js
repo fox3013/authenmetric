@@ -1646,7 +1646,19 @@ $('a.menu').click(function(){
 	}
 });
 
+
+
 if (window.innerWidth >= 600) {
+  $(".cover-team").slick({
+    dots: true,
+  	infinite: false,
+  	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: false,
+  	lazyLoad: 'ondemand',
+    prevArrow:"<img class='a-left control-c prev slick-prev' style='z-index:20;position:absolute;left:20px; width: 60px;height: 60px;' src='./assets/images/icon_left.png' onmouseover='hover(this);' onmouseout='unhover(this);'>",
+    nextArrow:"<img class='a-right control-c next slick-next' style='z-index:20;position:absolute;right:20px; width: 60px;height: 60px;' src='./assets/images/icon_right.png' onmouseover='hover(this);' onmouseout='unhover(this);'>"
+  });
   $(".cover-roll").slick({
   	dots: true,
     customPaging : function(slider, i) {
@@ -1662,6 +1674,14 @@ if (window.innerWidth >= 600) {
     nextArrow:"<img class='a-right control-c next slick-next' style='z-index:20;position:absolute;right:20px; width: 60px;height: 60px;' src='./assets/images/icon_right.png' onmouseover='hover(this);' onmouseout='unhover(this);'>"
   });
 }else {
+  $(".cover-team").slick({
+    dots: true,
+  	infinite: false,
+  	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: false,
+  	lazyLoad: 'ondemand',
+  });
   $(".cover-roll").slick({
   	dots: true,
     customPaging : function(slider, i) {
