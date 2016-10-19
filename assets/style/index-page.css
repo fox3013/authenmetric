@@ -86,23 +86,23 @@ section#cover h3 {
   padding: 70px 20px 0 20px;
 }
 
-.slick-dots {
+section#cover .slick-dots {
     position: relative !important;
     bottom: 30px !important;
 
 }
-.slick-dots li{
+section#cover .slick-dots li{
   width:50px !important;
   margin: 0 5px !important;
 }
-.slick-dots-button{
+section#cover .slick-dots-button{
   width:50px;
   height:2px;
   background-color: #aaaaaa;
   opacity: 0.4;
 }
 
-.slick-dots li.slick-active .slick-dots-button
+section#cover .slick-dots li.slick-active .slick-dots-button
 {
     opacity: 1;
 }
@@ -174,6 +174,9 @@ section#mentor #team-0{
 
 section#mentor .main-container{
   max-width: none;
+}
+section#mentor .slick-dots{
+  bottom: 20px;
 }
 section#mentor .slick-dotted.slick-slider{
   margin: 0
