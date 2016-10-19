@@ -1651,7 +1651,7 @@ $('a.menu').click(function(){
 if (window.innerWidth >= 600) {
   $(".cover-team").slick({
     dots: true,
-  	infinite: false,
+  	infinite: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
   	autoplay: false,
@@ -1676,7 +1676,7 @@ if (window.innerWidth >= 600) {
 }else {
   $(".cover-team").slick({
     dots: true,
-  	infinite: false,
+  	infinite: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
   	autoplay: false,

@@ -337,6 +337,49 @@ section#mentor .slick-dotted.slick-slider{
     }
   }
 
+  section#mentor .team-members{
+    background: -webkit-radial-gradient(60% 60%, closest-corner, #2e436e, #211e32 90%); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(closest-corner 60% 60%, closest-corner, #2e436e, #211e32 90%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(closest-corner 60% 60%, closest-corner, #2e436e, #211e32 90%); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(circle closest-corner at 25% 40%, #696969, #202020 60%); /* Standard syntax */
+    color: white;
+  }
+  section#mentor .team-avatar{
+    height: inherit;
+    text-align: right;
+  }
+  section#mentor .team-avatar img{
+    display: inline-block;
+    padding-top: 100px;
+    padding-right: 5%;
+  }
+  section#mentor .team-intro{
+    padding-top:100px;
+    padding-right: 15%;
+    padding-left: 5%;
+  }
+  section#mentor .team-intro h3{
+    line-height: 1.5;
+    font-size: 2.7692em;
+  }
+  section#mentor .team-intro h3 span{
+    font-size: 0.6667em;
+    color: rgb(153, 153, 153);
+  }
+  section#mentor .team-intro h4{
+    font-size: 1.2307em;
+  }
+  section#mentor .team-intro h4 span{
+    color: rgb(153, 153, 153);
+  }
+  section#mentor .team-intro p{
+    font-size: 1.3846em;
+    line-height: 2;
+  }
+
+
+
+
 
 
 section#contact {
