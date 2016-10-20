@@ -1155,6 +1155,19 @@ section#feature-cases {
   }
 }
 
+@media screen and (max-width: 360px)
+{
+  section#mentor .team-title h3{
+    font-size: 1.4em;
+  }
+  section#mentor .team-title h3 span{
+    font-size: 0.6em;
+  }
+  section#mentor .team-title h4{
+    font-size: 0.6em;
+  }
+}
+
 @media screen and (max-width: 500px) and (max-height: 550px){
   /*iphone 4 5*/
 
