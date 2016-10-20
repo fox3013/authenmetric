@@ -161,6 +161,7 @@ section#features {
 section#mentor{
   background-color: rgb(62, 64, 68);
   height:480px;
+  color: white;
 }
 section#mentor .cover-team{
   height: 480px;
