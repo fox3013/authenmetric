@@ -3,6 +3,10 @@ body {
   font-size: 1.3em;
   background: #fff;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .content {
   width: 100%;
   margin-top: 80px;
@@ -235,7 +239,7 @@ section#mentor .slick-dotted.slick-slider{
   section#mentor p {
     margin-top: 30px;
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 300;
     display: block;
     line-height: 1.6;
     text-align: left;
