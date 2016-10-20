@@ -934,10 +934,10 @@ section#feature-cases {
 
   section#mentor .team-members{
     background-color: #202020;
-    background: -webkit-radial-gradient(50% 50%, closest-corner, #484848, #202020 80%); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(closest-corner 50% 50%, closest-corner, #484848, #202020 80%); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(closest-corner 50% 50%, closest-corner, #484848, #202020 80%); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(eclipse closest-corner at 50% 50%, #484848, #202020 80%); /* Standard syntax */
+    background: -webkit-radial-gradient(50% 40%, closest-corner, #484848, #202020 80%); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(closest-corner 50% 40%, closest-corner, #484848, #202020 80%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(closest-corner 50% 40%, closest-corner, #484848, #202020 80%); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(eclipse closest-corner at 50% 40%, #484848, #202020 80%); /* Standard syntax */
     color: white;
   }
   section#mentor .team-avatar{
