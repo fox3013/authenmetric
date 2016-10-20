@@ -171,6 +171,17 @@ section#mentor #team-0{
   position: relative;
   overflow: hidden;
 }
+section#mentor #team-0.mentor-hover{
+  animation-name: animHoverMentor;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+}
+section#mentor #team-0.mentor-normal{
+  animation-name: animNormalMentor;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+}
 
 section#mentor .main-container{
   max-width: none;
@@ -206,17 +217,7 @@ section#mentor .slick-dotted.slick-slider{
       height:480px;}
   }
 
-  section.mentor-hover{
-    animation-name: animHoverMentor;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
 
-  }
-  section.mentor-normal{
-    animation-name: animNormalMentor;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-  }
   section#mentor .cover-text {
     padding-top: 200px;
     padding-left: 18%;
@@ -870,6 +871,10 @@ section#feature-cases {
     border-radius: 40px;
     border-style: solid;
     border-width: 1px;
+  }
+
+  section#mentor #team-0{
+    background: url(../images/pic-mentor-hover.jpg) center center;
   }
 
   /*btn-show-mentor hover animation should not show*/
