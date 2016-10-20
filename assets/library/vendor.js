@@ -1682,7 +1682,7 @@ if (window.innerWidth >= 600) {
     customPaging : function(slider, i) {
         return '<a><div class="slick-dots-button-team"><div/></a>';
     },
-  	infinite: true,
+  	infinite: false,
   	slidesToShow: 1,
   	slidesToScroll: 1,
   	autoplay: false,
