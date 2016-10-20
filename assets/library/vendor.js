@@ -1652,6 +1652,9 @@ if (window.innerWidth >= 600) {
   $(".cover-team").slick({
     dots: true,
   	infinite: true,
+    customPaging : function(slider, i) {
+        return '<a><div class="slick-dots-button-team"><div/></a>';
+    },
   	slidesToShow: 1,
   	slidesToScroll: 1,
   	autoplay: false,
@@ -1676,6 +1679,9 @@ if (window.innerWidth >= 600) {
 }else {
   $(".cover-team").slick({
     dots: true,
+    customPaging : function(slider, i) {
+        return '<a><div class="slick-dots-button-team"><div/></a>';
+    },
   	infinite: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
