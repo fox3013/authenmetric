@@ -879,7 +879,7 @@ section#feature-cases {
   }
 
   section#mentor #team-0{
-    background: url(../images/pic-mentor-hover.jpg) center center;
+    background: url(../images/pic-mentor-hover.jpg) 30% center;
   }
 
   /*btn-show-mentor hover animation should not show*/
