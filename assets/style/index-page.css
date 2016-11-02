@@ -1099,6 +1099,7 @@ section#feature-cases {
   }
   section#cover h2 {
     font-size: 1.3em;
+    padding: 15px;
   }
   section#cover h3 {
     padding: 0 20px 0 20px;
@@ -1165,6 +1166,16 @@ section#feature-cases {
   }
   section#mentor .team-title h4{
     font-size: 0.6em;
+  }
+  section#cover h1 {
+    font-size: 1.8em;
+  }
+  section#cover h2 {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  section#cover h3 {
+    padding: 0 10px 0 10px;
   }
 }
 
